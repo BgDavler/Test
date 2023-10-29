@@ -4,14 +4,14 @@
 
 .section{
     height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: cadetblue;
+    background-color: #23e3c2;
 }
 
 .slider{
-    background-color: aliceblue;
     width: 800px;
     height: 500px;
     border-radius: 10px;
@@ -101,10 +101,11 @@
     background-color: #23e3c2;
 }
 
-.prueba{
-    height: 100vh;
-    width: 100%;
-    background-image: url(img/imagen.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+@media (max-width: 800px){
+    .section{
+        background-color: antiquewhite;
+        height: 100vh;
+        width: 100%;
+        display: block;
+    }
 }
