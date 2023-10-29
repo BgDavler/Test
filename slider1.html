@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slider1.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="section">
+        <div class="slider">
+            <div class="slide">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="st first">
+                    <img src="https://images.pexels.com/photos/712618/pexels-photo-712618.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="1">
+                </div>
+                <div class="st">
+                    <img src="https://images.pexels.com/photos/2127732/pexels-photo-2127732.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="2">
+                </div>
+                <div class="st">
+                    <img src="https://images.pexels.com/photos/1534604/pexels-photo-1534604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="3">
+                </div>
+                <div class="st">
+                    <img src="https://images.pexels.com/photos/2343509/pexels-photo-2343509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="4">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="a-b1" onclick="changeSlide(0)"></div>
+                    <div class="a-b2" onclick="changeSlide(-1)"></div>
+                    <div class="a-b3" onclick="changeSlide(-2)"></div>
+                    <div class="a-b4" onclick="changeSlide(-3)"></div>
+                </div>
+            </div>
+            <div class="nav-m">
+                <label for="radio1" class="m-btn"></label>
+                <label for="radio2" class="m-btn"></label>
+                <label for="radio3" class="m-btn"></label>
+                <label for="radio4" class="m-btn"></label>
+            </div>
+        </div>
+    </section>
+
+    <div class="prueba"></div>
+    <script type="text/javascript">
+
+        function changeSlide(index) {
+        var slides = document.getElementsByClassName("slide");
+        var currentSlide = document.getElementsByClassName("first")[0];
+    
+        // Calcular el índice del slide siguiente
+        var nextIndex = (currentSlide.dataset.index + index + slides.length) % slides.length;
+    
+        // Quitar la clase "first" al slide actual
+        currentSlide.classList.remove("first");
+    
+        // Agregar la clase "first" al slide siguiente
+        slides[nextIndex].classList.add("first");
+    }
+    </script>
+</body>
+</html>
+
