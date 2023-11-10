@@ -103,8 +103,8 @@ header{
 }
 
 .dropdown_menu.open{
-    margin-top: 10px;
-    padding-top: 10px;
+    margin-top: 5px;
+    padding-top: 5px;
     height: 230px;
 }
 
