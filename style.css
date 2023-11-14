@@ -281,7 +281,7 @@ header{
     }
 }
 
-@media (max-width: 750px){    
+@media (max-width: 800px){    
 
     #locales{
         height: 100vh;
@@ -318,17 +318,17 @@ header{
 
     .texto h2{
         color: #0037a5;
-        font-size: 1.9em;
-        margin-bottom: 10px;
+        font-size: 2.2em;
+        margin-bottom: 1vh;
     }
 
     .texto p{
-        font-size: 0.71em;
-        margin-bottom: 10px;
+        font-size: 1.05em;
+        margin-bottom: 1vh;
     }
 
     .texto span{
-        font-size: 0.9em;
+        font-size: 1.5em;
     }
 
     .navbar{
@@ -350,4 +350,22 @@ header{
         left: 2rem;
         width: unset;
     }
+}
+
+@media (max-width: 500px)   {
+    .texto h2{
+        color: #0037a5;
+        font-size: 1.9em;
+        margin-bottom: 10px;
+    }
+
+    .texto p{
+        font-size: 0.71em;
+        margin-bottom: 10px;
+    }
+
+    .texto span{
+        font-size: 0.9em;
+    }
+
 }
