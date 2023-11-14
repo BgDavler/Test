@@ -245,7 +245,6 @@ header{
     }
 
     .texto h2{
-        color: #0037a5;
         font-size: 2.2em;
         margin-bottom: 20px;
     }
@@ -317,7 +316,6 @@ header{
     }
 
     .texto h2{
-        color: #0037a5;
         font-size: 2.2em;
         margin-bottom: 1vh;
     }
@@ -354,7 +352,6 @@ header{
 
 @media (max-width: 500px)   {
     .texto h2{
-        color: #0037a5;
         font-size: 1.9em;
         margin-bottom: 10px;
     }
