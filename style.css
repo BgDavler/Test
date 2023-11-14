@@ -251,7 +251,7 @@ header{
     }
 
     .texto p{
-        font-size: 1.25;
+        font-size: 1.05em;
         margin-bottom: 20px;
     }
 
@@ -307,13 +307,28 @@ header{
     }
 
     .contenedor-locales img{
-        height: 250px;    /*1vh = 10.48978723404255*/
+        height: 23.5vh;    /*1vh = 10.48978723404255*/
         width: 100%;      /*1% = 3.891*/
         border-radius: 10px 10px 0 0;
     }
 
     .contenedor-locales:nth-child(5), .contenedor-locales:nth-child(6){
         display: none;
+    }
+
+    .texto h2{
+        color: #0037a5;
+        font-size: 1.9em;
+        margin-bottom: 10px;
+    }
+
+    .texto p{
+        font-size: 0.71em;
+        margin-bottom: 10px;
+    }
+
+    .texto span{
+        font-size: 0.9em;
     }
 
     .navbar{
